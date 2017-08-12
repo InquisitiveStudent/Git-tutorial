@@ -1,27 +1,32 @@
-Download https://git-scm.com/downloads
+## Installation 
+
+*Download*:  `https://git-scm.com/downloads`
 After download, check your git version to make sure git is there.
-git --version
+
+'git --version'
 
 
-Setup your identity
+## Setup your identity
 git config --global user.name "Your_name"
 git config --global user.email you@hotmail.com
 
-Start your project.
-Move to your project directory
-ls -la
-make your changes
-After making changes, type "git status"
+
+## Instruction
+Move to your project directory  
+```
+git status
 git add -A
-check git status again "git status" 
+git status
 git commit
 
-git remote add origin https://github.com/user/repository.git
+git remote add origin https://github.com/user/repository.git  
 git pull (make sure it is the newest file. Take note: while you making the changes other may push their code into github)
 git push
-If you want git to ignore file(not to post to github)
-Step 1) type "touch .gitignore"
-Step 2) In .gitignore type: 
+```
+#### If you want git to ignore file(not to post to github)
+Create .gitignore file
+`touch .gitignore`
+And add in 
 .DS_Store
 .project(your ignored file)
 *.pyc (ignore all file with pyc extension)
