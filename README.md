@@ -21,16 +21,31 @@ git config --global user.email you@hotmail.com
 
 ## Instruction
 
+Make your project directory
+```
+git init
+```
+
 Move to your project directory  
 ```
-git status
+### Check status of the git
+git status     
+### Add the file to staging area
 git add -A
+### Check status after adding the file. Make sure the file is there
 git status
+
+### Must create message
 git commit -m "Your messages lies here"
 
 git remote add origin https://github.com/user/repository.git  
-git remote -vv  (make sure it is correct remote repository)
-git pull     (make sure it is the newest file. Take note: while you making the changes other may push in their code into github)
+
+### make sure it is correct remote repository
+git remote -vv  
+
+### (make sure it is the newest file. Take note: while you making the changes other may push in their code into github)
+git pull     
+### commit to git repository
 git push origin master
 ```
 #### Cloning a remote repo
